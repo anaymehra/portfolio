@@ -1,0 +1,159 @@
+#home {
+    background-color: #f9f9f9;
+}
+#about {
+    background-color: white;
+    height: 100vh;
+}
+#project {
+    background-color: #f9f9f9;
+    height: 50vh;
+}
+#contact {
+    background: radial-gradient(circle at 108.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+    height: 32vh;
+    
+}
+.nav-link {
+    font-size: larger;
+    color: whitesmoke;
+}
+.navbar-brand {
+    color: white;
+    transition: color 0.3s ease;
+}
+.navbar-brand:hover{
+    color: lightcyan;
+}
+.nav-link:hover{
+    color: gray;
+}
+.bg {
+    background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+}
+.content {
+    height: 100vh;
+}
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+    width: 50px;
+    
+  }
+  @keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+.title-container {
+    display: flex;
+    align-items: center; /* Vertically center the title and the image */
+    justify-content: center; /* Horizontally center the title and the image */
+    margin-bottom: 20px; /* Add margin for spacing */
+    text-align: center;
+}
+  
+.title-container h1 {
+    margin-right: 10px; /* Adjust margin between title and image */
+    font-weight: bold;
+  }
+.intro-line {
+    margin-top: 10px; /* Adjust margin-top as needed */
+    text-align: center; /* Center align the text */
+    font-size: 20px;
+}
+.text-container {
+    text-align: center; /* Align text in the center */
+}
+.hero {
+    width: 250px; /* Set the width of the image */
+    float: right; /* Float the image to the right */
+    margin-left: 20px; /* Add margin to create space between the text and the image */
+    border: 10px solid transparent;
+    border-radius: 50%; /* Make it circular */
+    animation: borderAnimation 2s infinite alternate;
+}
+
+@keyframes borderAnimation {
+    0% {
+        border-color: transparent;
+    }
+    100% {
+        border-color: rgb(255, 124, 0); /* Change color as needed */
+    }
+}
+
+.about-container {
+    height: 60vh;
+}
+.about-text {
+    max-width: 398px;
+    font-size: larger;
+    text-align: center;
+    
+}
+.about-heading {
+    text-align: center;
+    color: rgb(255, 124, 0);
+    font-weight: bold;
+}
+.tech-icons {
+    width: auto;
+    height: auto;
+}
+
+.project-container {
+    height: 50vh;
+}
+.project-container h2 {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+.contact-container{
+    height: 30vh;
+}
+.contact-container p {
+    color: rgb(255, 124, 0);
+    font-size: 20px;
+    font-weight: bold;
+}
+.contact-container h2 {
+    font-weight: bold;
+    color: #f9f9f9;
+}
+.contact-content {
+    text-align: center;
+    width: 1200px;
+}
+/* Media query for viewport width below 900px */
+@media (max-width: 750px) {
+    .svg-icon {
+        width: 60px; 
+        height: 60px;
+    }
+}
+
+@media (max-width: 400px) {
+    .svg-icon {
+        width: 30px; 
+        height: 30px;
+    }
+}
+
+@media (max-width: 310px) {
+    section{
+        width: 100vh;
+    }
+    .navbar{
+        width: 100vh;
+    }
+}
